@@ -1,0 +1,45 @@
+[
+  {
+    "id": "identity_0",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "OBSERVATION:
+[1032] textbox 'Departure City' focused: True required: True
+[1035] textbox 'Arrival City' required: True
+[1040] datepicker 'Departure Date'
+[1045] button 'Search Flights'
+[1050] link 'Flight Deals'
+URL: http://flyworld.com
+OBJECTIVE: Book a flight from New York to London on October 15th.
+PREVIOUS ACTION: None
+"
+      },
+      {
+        "from": "gpt",
+        "value": "Let's think step-by-step. I should start by entering 'New York' in the 'Departure City' textbox, and 'London' in the 'Arrival City' textbox. Then, I'll pick October 15th from the datepicker. In summary, the next action I will perform is ```type [1032] [New York] [1]```."
+      }
+    ]
+  },
+{
+    "id": "identity_0",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "OBSERVATION:
+[1192] link 'Back to Search Results'
+[1198] button 'Book Flight'
+[1200] StaticText 'Flight details: Flight FW101, New York to London, Departure: 10:00 AM, Arrival: 10:00 PM'
+[1205] link 'See More Flight Options'
+URL: http://flyworld.com/results
+OBJECTIVE: Confirm the booking for Flight FW101.
+PREVIOUS ACTION: ```click [1045]```
+"
+      },
+      {
+        "from": "gpt",
+        "value": "Let's think step-by-step. The observation shows the details of Flight FW101, which matches the desired flight. I should click on the 'Book Flight' button to confirm the booking. In summary, the next action I will perform is ```click [1198]```."
+      }
+    ]
+  }
+]
